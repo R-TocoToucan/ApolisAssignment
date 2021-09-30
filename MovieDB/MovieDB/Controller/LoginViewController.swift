@@ -27,6 +27,10 @@ class LoginViewController: UIViewController {
             let st = UIStoryboard(name: "Main", bundle: nil)
             let vc = st.instantiateViewController(withIdentifier: "MovieListViewController") as! MovieListViewController
             self.navigationController?.pushViewController(vc, animated: true)
+        } else {
+            let alert = UIAlertController(title: "ID/PW Error", message: "Username and password must be over 6 characters", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true)
         }
     }
     
