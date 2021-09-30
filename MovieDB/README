@@ -1,0 +1,5 @@
+This is a TocoToucan MovieDB test project for Apolis ios dev training.
+
+The app fetches data from The Movie Database API and display them in a table view with access to detailed view.
+
+Build/Design/Optimisation in progress.
